@@ -300,6 +300,82 @@
     }
 }
 
+/*----- media query LOCAL -----*/
+@media (max-width: 1218px){
+    .local-section{
+        h1{
+            text-align: center;
+        }
+        .local-container{
+            .local-info{
+                .local{
+                    max-width: 580px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1020px){
+    .local-section{
+        h1{
+            text-align: center;
+        }
+        .local-container{
+            display: flex;
+            justify-content: center;
+            .local-info{
+                .local{
+                    display: flex;
+                    max-width: 900px;
+                }
+            }
+            .local-map{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 795px){
+    .local-section{
+        .local-container{
+            .local-info{
+                .local{
+                    max-width: 500px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 568px){
+    .local-section{
+        .local-container{
+            .local-info{
+                .local{
+                    max-width: 460px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 513px){
+    .local-section{
+        .local-container{
+            .local-info{
+                .local{
+                    max-width: 340px;
+                    img{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
 /*----- media query FOOTER -----*/
 @media (max-width: 1020px) {
     footer{

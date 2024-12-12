@@ -36,7 +36,32 @@
 
     <main>
       <div class="cart-container">
-        <div class="cart-details">
+        <div class="cart-data fact-data">
+          <h2>DATOS DE FACTURA</h2>
+          <ul class="cart-items">
+            <li class="cart-item">
+              <span class="tit">Nombre:</span>
+              <span class="val">Florencia Valiente</span>
+            </li>
+            <li class="cart-item">
+              <span class="tit">Documento:</span>
+              <span class="val">4.985.326-8</span>
+            </li>
+            <li class="cart-item">
+              <span class="tit">Dirección:</span>
+              <span class="val">Herrera 360</span>
+            </li>
+            <li class="cart-item">
+              <span class="tit">Teléfono:</span>
+              <span class="val">+589 98112587</span>
+            </li>
+            <li class="term-cond">
+              <i class="fa-solid fa-check"></i>
+              <span>Estoy de acuerdo con los Terminos y Condiciones</span>
+            </li>
+          </ul>
+        </div>
+        <div class="cart-data cart-details">
           <h2>DETALLE DEL PEDIDO</h2>
           <div class="cart-account">
             <p>flovaliente143@gmail.com</p>
@@ -48,7 +73,7 @@
                 <img src="../public/img/prod1.jpg" alt="Camisa Mango" class="cart-item-img">
                 <div class="cart-item-description">
                   <h3>Camisa Mango</h3>
-                  <p class="product-code">Art: RED-BRISA-554</p>
+                  <span>Art: CAM-MANG-554</span>
                 </div>
               </div>
               <div class="cart-item-quantity">
@@ -57,11 +82,49 @@
                 <button class="quantity-btn">+</button>
               </div>
 
-              <p>$ UYU 2100 </p>
-                    
-              <a id="cart-data"><i class="fa-regular fa-trash-can"></i></a>
+              <div>
+                <span class="sim">$ UYU </span>
+                <span class="amount">2.100</span>
+                <a id="cart-data"><i class="fa-regular fa-trash-can"></i></a>
+              </div>
+            </li>
+            <li class="cart-item">
+              <div class="cart-item-info">
+                <img src="../public/img/prod2.jpg" alt="Camisa Mango" class="cart-item-img">
+                <div class="cart-item-description">
+                  <h3>Pantalon Hanna</h3>
+                  <span>Art: PANT-HNNA-546</span>
+                </div>
+              </div>
+              <div class="cart-item-quantity">
+                <button class="quantity-btn">-</button>
+                <span>1</span>
+                <button class="quantity-btn">+</button>
+              </div>
+
+              <div>
+                <span class="sim">$ UYU </span>
+                <span class="amount">3.200</span>
+                <a id="cart-data"><i class="fa-regular fa-trash-can"></i></a>
+              </div>
+            </li>
+            <li class="total-fila">
+              <div class="imp-tot">
+                <span>Importe total:</span>
+                <div>
+                  <span class="sim">$ UYU </span>
+                  <span class="amount">5.300</span>
+                </div>
+              </div>
             </li>
           </ul>
+          <div class="discount">
+            <span>¿Tenes código de descuento?</span>
+            <form action="">
+              <input type="text" placeholder="Ingresa código de descuento" required>
+              <button class="btn-secondary">APLICAR</button>
+            </form>
+          </div>
         </div>
       </div>
     </main>
@@ -70,7 +133,7 @@
       <a href="./shop.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i>SEGUIR COMPRANDO</a>
       <div>
         <span class="sim">$ UYU </span>
-        <span class="amount">2.100</span>
+        <span class="amount">5.300</span>
       </div>
       
       <a href="/envio" class="continue-btn">CONTINUAR<i class="fa-solid fa-arrow-right"></i></a>

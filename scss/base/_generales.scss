@@ -6,7 +6,7 @@
 
 body {
     color: #606c76;
-    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Montserrat', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     font-weight: 300;
     letter-spacing: .01em;
     -webkit-text-size-adjust: 100%;
@@ -26,12 +26,6 @@ a {
 a:focus, a:hover {
     color: #7a7a7a;
     transition: 0.5s;
-}
-  
-dl, ol, ul {
-    list-style: none;
-    margin-top: 0;
-    padding-left: 0;
 }
   
 dl ul, ol ul, ul dl, ul ol, ul ul {
