@@ -376,6 +376,137 @@
     }
 }
 
+/*----- media query CART ------*/
+@media (max-width: 1200px){
+    .cart-container{
+        flex-direction: column;// Pongo todo en una columna
+        align-items: center;// Y centro el contenido de la columna
+        .fact-data, .cart-details{
+            max-width: 550px;
+            width: 100%;
+        }
+        .cart-details{
+            h2{
+                background-color: #f9f9f9;
+                color: #000000;
+                border-bottom: 1px solid rgba(224, 224, 224, 0.906);
+            }
+        }
+    }
+    .cart-actions{
+        padding: 10px 50px;
+        
+    }
+}
+
+@media (max-width: 668px){
+    .cart-container{
+        margin: 10px;
+        .fact-data, .cart-details{
+            max-width: 380px;
+            width: 100%;
+        }
+        .fact-data{
+            ul{
+                .cart-item{
+                    font-size: 13px;
+                }
+            }
+        }
+        .cart-details{
+            height: 440px;
+            margin-bottom: 100px;
+            .cart-account{
+                font-size: 11px;// Achico la letra del correo y el cambiar cuenta
+            }
+            ul{
+                li{
+                    .cart-item-info{
+                        img{
+                            width: 60px;
+                        }
+                        .cart-item-description{
+                            h3{
+                                font-size: 13px;
+                            }
+                            span{
+                                font-size: 9px;
+                            }
+                        }
+                    }
+                    .cart-item-price{
+                        .sim{
+                            font-size: 10px; 
+                        }
+                        .amount{
+                            font-size: 13px; 
+                        }
+                        a{
+                            i{
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cart-actions{
+        flex-wrap: wrap;
+        padding: 10px 10px;
+        a{
+            flex: 1; /* Distribuye el espacio entre los botones */
+            text-align: center;
+            margin: 0 8px; //Para separar los botones
+            box-sizing: border-box; //Para que me deje separar los botones
+            font-size: 10px;
+            padding: 13px 13px; // Achico el padding para que queden mas chicos
+        }
+        div{
+            order: -1; // Mueve el precio al principio
+            width: 100%; //Hace que el precio ocupe toda la línea
+            text-align: center;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgba(213, 213, 213, 0.628);
+            .sim{
+                font-size: 15px;
+            }
+            .amount{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+/*----- media query PRODUCTO -----*/
+@media (max-width: 1020px) {
+    .product-page{
+        .product-content{
+            .product-images{
+                .thumbnails{
+                    display: none;
+                }
+            }
+        }
+        .product-content{
+            flex-direction: column; // Pone todo el contenido en una columna
+            align-items: center;
+            .product-details{
+                text-align: center;
+                .product-options{
+                    align-items: center;
+                }
+                .itau-button{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
 /*----- media query FOOTER -----*/
 @media (max-width: 1020px) {
     footer{

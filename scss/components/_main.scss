@@ -298,8 +298,9 @@
 /*---CART---*/
 .cart-container{
     display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
+    justify-content: center;
     margin: 25px;
+    margin-bottom: 70px; //Para que se vea el contenido que tapa la barra de abajo
     gap: 20px;
     .cart-data{
         background-color: #f9f9f9;
@@ -320,8 +321,9 @@
             }
         }
     }
+    
     .fact-data{
-        width: 40%;
+        width: 590px;
         height: 266px;
         border-radius: 0;
         border: 1px solid rgba(224, 224, 224, 0.906);
@@ -346,21 +348,23 @@
             }
             .cart-item{
                 padding-bottom: 5px;
+                font-size: 14px;
                 .tit{
                     display: inline-block;
                     font-weight: bold;
                     width: 140px;
                 }
                 span{
-                    font-size: 14px;
                     color: #000;
                 }
             }
         }
     }
     .cart-details{
-        width: 35%;
+        width: 550px;
         height: 490px;
+        border: 1px solid rgba(224, 224, 224, 0.906);
+        border-radius: 0;
         h2{
             color: white;
             background-color: #7e7e7e;
@@ -386,7 +390,7 @@
                     display: flex;
                     gap: 8px;
                     img{
-                        width: 70px;
+                        max-width: 70px;
                         height: auto;
                         margin-bottom: 6px;
                     }
@@ -431,7 +435,7 @@
                         font-size: 11px;
                     }
                 }
-                div{
+                .cart-item-price{
                     margin-right: 5px;
                     color: #202020;
                     .sim{
@@ -479,12 +483,13 @@
             }
         }
         .discount{
-            padding: 15px;
+            padding: 5px 10px 10px 10px;
             span{
+                display: block;// Le pongo block ya que el span es inline no me toma margenes verticales
                 font-size: 12px;
                 color: #000;
                 font-weight: bold;
-                
+                margin-bottom: 5px;
             }
             form{
                 display: flex;
@@ -492,7 +497,6 @@
                     width: 100%;
                     padding: 8px;
                     margin-right: 5px;
-                    margin-top: 5px;
                     border: 1px solid rgb(222, 222, 222);
                 }
             }
@@ -606,7 +610,7 @@
             h1{
                 font-size: 24px;
                 letter-spacing: 1px;
-                margin-bottom: 8px;
+                margin-bottom: 5px;
                 color: #202020;
                 font-weight: lighter;
             }
@@ -637,7 +641,7 @@
                 .sizes{
                     display: flex;
                     flex-direction: column;
-                    gap: 7px;
+                    gap: 2px;
                     label{
                         font-size: 12px;
                         font-weight: bold;
@@ -649,7 +653,7 @@
                         button{
                             width: 35px;
                             height: 37px;
-                            border: 1px solid #e7e7e7;
+                            border: 1px solid #cccccc85;
                             background-color: white;
                             color: #333;
                             font-size: 11px;
@@ -660,6 +664,10 @@
                             &:hover{
                                 border: 1px solid black;
                             } 
+                            &:active, &.selected{
+                                background-color: black;
+                                color: white;
+                            }
                         }
                     }
                 }
@@ -684,7 +692,7 @@
                         padding: 0 14px;
                         background: none;
                         color: #555;
-                        border: 1px solid #ccc;
+                        border: 1px solid #cccccc85;
                         &:hover{
                             font-size: 16px;
                             padding: 0 13px;
@@ -698,7 +706,7 @@
                             height: 50px;
                             padding: 8px;
                             font-size: 14px;
-                            border: 1px solid #ccc;
+                            border: 1px solid #cccccc85;
                             border-radius: 0;
                             outline: none;
                         }
@@ -731,8 +739,8 @@
             .shipping{
                 display: flex;
                 justify-content: space-between;
-                border-top: 1px solid #ccc;
-                border-bottom: 1px solid #ccc;
+                border-top: 1px solid #cccccc85;
+                border-bottom: 1px solid #cccccc85;
                 padding: 10px;
                 margin-top: 20px;
                 .shipping-info{
